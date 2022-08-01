@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact me form</title>
+  </head>
+  <body>
+    <form action="mailto:sujal5961@gmail.com" method="post" enctype="text/plain"> <!--enctype tells about encoding
+      type of our text ,just as we specified that our website is encoded in utf-8 . -->
+      <table cellspacing=30>
+
+        <tr>
+          <td><label>Your name : </label></td>
+          <td><input type="text" name="Your name" value=""><br>
+          <!--Hre we are filling name attribute of input also .It works when we submit our form and we post this data
+          that user will input to our mail client then form will know how to classify each bit of data for ex. this
+          input should be labeled to name ,this to e-mail and this to message .--></td>
+        </tr>
+        
+        <tr>
+          <td><label>Your e-mail : </label></td>
+          <td><input type="text" name="Your e-mail" value=""><br></td>
+        </tr>
+
+        <tr>
+          <td><label>Your message : </label></td>
+          <td><textarea name="Your message" rows="8" cols="30"></textarea><br>
+          <!--text area is used to enter a large text , you can set the rows(tells how tall is the table)
+           and columns(tells how wide is your table) of your textarea but it can be altered by the user
+           while filling the form . --></td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" name="" value="Submit"></td>
+        </tr>
+
+      </table>
+
+    </form>
+  </body>
+</html>
